@@ -1,8 +1,11 @@
-import request from "supertest";
-// import app from "../app"; // Adjust the import path to your Express app
+/**
+ * @jest-environment node
+ */
+import { POST } from "@/app/api/login/route";
+import { NextRequest } from "next/server";
 
 describe("POST /api/login", () => {
   it("should return 400 if email is missing", async () => {
-    // TODO: Implement this test
+      // TODO: Implement this test
   });
 });
